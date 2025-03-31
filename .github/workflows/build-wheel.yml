@@ -23,7 +23,7 @@ jobs:
         run: python -m build
 
       - name: Upload wheel as artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v4
         with:
           name: pymatgen-wheel-py313
           path: dist/*.whl
